@@ -1,0 +1,9 @@
+[project]
+name = "xmen2-decomp"
+version = "0.1.0"
+description = "X-Men Legends II (PC) reverse engineering: pinned images, symbol map and RE notes"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+package = false

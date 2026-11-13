@@ -1,0 +1,246 @@
+# The images this decomp covers: the player's own install, pinned by SHA-256.
+# Sections were read from these exact files; a file with the same hash has the same layout.
+
+[[image]]
+file = "XMen2.exe"
+size = 3129344
+sha256 = "146cd9c316edb57a267cd73753a7ce9af647e52aab750d449c6b278fb4a1669b"
+image_base = 0x00400000
+symbols = "config/symbols/xmen2.txt"
+sections = [
+  { name = ".text", start = 0x00401000, size = 0x27e000, execute = true },
+  { name = ".rdata", start = 0x0067f000, size = 0x55000, execute = false },
+  { name = ".data", start = 0x006d4000, size = 0x398c10, execute = false },
+  { name = ".tls", start = 0x00a6d000, size = 0x1000, execute = false },
+  { name = ".data1", start = 0x00a6e000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x00a6f000, size = 0x6000, execute = false },
+]
+
+[[image]]
+file = "libIGAttrs.dll"
+size = 598016
+sha256 = "a3c4768bf2ba08f5de558984ef78c0deada9d1d43e170f6ac9cc23f6cfff120b"
+image_base = 0x10000000
+symbols = "config/symbols/libigattrs.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x1d000, execute = true },
+  { name = ".rdata", start = 0x1001e000, size = 0x6a000, execute = false },
+  { name = ".data", start = 0x10088000, size = 0x2000, execute = false },
+  { name = ".rsrc", start = 0x1008a000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1008b000, size = 0x7000, execute = false },
+]
+
+[[image]]
+file = "libIGAudio.dll"
+size = 45056
+sha256 = "6a4fcb141e4d4fea7a294d635cabf88bc75c9e70f56c04a985de37971e454e63"
+image_base = 0x10000000
+symbols = "config/symbols/libigaudio.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x2000, execute = true },
+  { name = ".rdata", start = 0x10003000, size = 0x5000, execute = false },
+  { name = ".data", start = 0x10008000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x10009000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1000a000, size = 0x1000, execute = false },
+]
+
+[[image]]
+file = "libIGCollision.dll"
+size = 86016
+sha256 = "6b96ed9cb3a47e5052f7c163568243f7961af311d79acb39147dff2b477cea94"
+image_base = 0x10000000
+symbols = "config/symbols/libigcollision.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x5000, execute = true },
+  { name = ".rdata", start = 0x10006000, size = 0xc000, execute = false },
+  { name = ".data", start = 0x10012000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x10013000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10014000, size = 0x1000, execute = false },
+]
+
+[[image]]
+file = "libIGCore.dll"
+size = 1486848
+sha256 = "1dc4daa739ba2155583b86f62b5a61c821bbb0efab77364748ddb59f7010de0d"
+image_base = 0x10000000
+symbols = "config/symbols/libigcore.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x76000, execute = true },
+  { name = ".rdata", start = 0x10077000, size = 0xe3000, execute = false },
+  { name = ".data", start = 0x1015a000, size = 0x5568, execute = false },
+  { name = ".rsrc", start = 0x10160000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10161000, size = 0xb000, execute = false },
+]
+
+[[image]]
+file = "libIGDisplay.dll"
+size = 151552
+sha256 = "1d64d8cc8022b0c4e44509e84f104ee9d5245375f7f29409ff9fba1acc384847"
+image_base = 0x10000000
+symbols = "config/symbols/libigdisplay.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x8000, execute = true },
+  { name = ".rdata", start = 0x10009000, size = 0x18000, execute = false },
+  { name = ".data", start = 0x10021000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x10022000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10023000, size = 0x2000, execute = false },
+]
+
+[[image]]
+file = "libIGGfx.dll"
+size = 1671168
+sha256 = "5546a2801854ddeddb64b21c5f4a8326f28b257f80d981fda3d312a7c06c5cc4"
+image_base = 0x10000000
+symbols = "config/symbols/libiggfx.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0xce000, execute = true },
+  { name = ".rdata", start = 0x100cf000, size = 0xa5000, execute = false },
+  { name = ".data", start = 0x10174000, size = 0x16864, execute = false },
+  { name = ".data1", start = 0x1018b000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x1018c000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1018d000, size = 0xe000, execute = false },
+]
+
+[[image]]
+file = "libIGGui.dll"
+size = 393216
+sha256 = "a08680a39155885506c801161f133d72a6f69607a35b7896d773940d5fa782b7"
+image_base = 0x10000000
+symbols = "config/symbols/libiggui.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x15000, execute = true },
+  { name = ".rdata", start = 0x10016000, size = 0x44000, execute = false },
+  { name = ".data", start = 0x1005a000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x1005b000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1005c000, size = 0x4000, execute = false },
+]
+
+[[image]]
+file = "libIGInsight.dll"
+size = 172032
+sha256 = "821ef180ae31f60f8705a32cce744ac7c283da79590147c0a231831bcb256a89"
+image_base = 0x10000000
+symbols = "config/symbols/libiginsight.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0xa000, execute = true },
+  { name = ".rdata", start = 0x1000b000, size = 0x1b000, execute = false },
+  { name = ".data", start = 0x10026000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x10027000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10028000, size = 0x2000, execute = false },
+]
+
+[[image]]
+file = "libIGLua.dll"
+size = 167936
+sha256 = "8d5f34b0668721ad3ad26a65acd0969a832e5c3ba3fac79f165ce760ccd253a9"
+image_base = 0x10000000
+symbols = "config/symbols/libiglua.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x1b000, execute = true },
+  { name = ".rdata", start = 0x1001c000, size = 0x9000, execute = false },
+  { name = ".data", start = 0x10025000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x10026000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10027000, size = 0x2000, execute = false },
+]
+
+[[image]]
+file = "libIGMath.dll"
+size = 593920
+sha256 = "494bf2513c1f9933dd9d852676af4279301b0d83c77e29fc07eb84e248673350"
+image_base = 0x10000000
+symbols = "config/symbols/libigmath.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x28000, execute = true },
+  { name = ".rdata", start = 0x10029000, size = 0x61000, execute = false },
+  { name = ".data", start = 0x1008a000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x1008b000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1008c000, size = 0x5000, execute = false },
+]
+
+[[image]]
+file = "libIGOpt.dll"
+size = 1298432
+sha256 = "3ab1c64a74e4fcbdde5970b374bb13ce242f6440b4203a33c4ff51fcc00a1a31"
+image_base = 0x10000000
+symbols = "config/symbols/libigopt.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x6c000, execute = true },
+  { name = ".rdata", start = 0x1006d000, size = 0xbe000, execute = false },
+  { name = ".data", start = 0x1012b000, size = 0x2f04, execute = false },
+  { name = ".rsrc", start = 0x1012e000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1012f000, size = 0xf000, execute = false },
+]
+
+[[image]]
+file = "libIGSg.dll"
+size = 1441792
+sha256 = "832e64ede714b47116d5cc0885507d24fe3793fbbcfae3d987d66dfd5820f72c"
+image_base = 0x10000000
+symbols = "config/symbols/libigsg.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x6f000, execute = true },
+  { name = ".rdata", start = 0x10070000, size = 0xdc000, execute = false },
+  { name = ".data", start = 0x1014c000, size = 0x5c08, execute = false },
+  { name = ".rsrc", start = 0x10152000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10153000, size = 0xf000, execute = false },
+]
+
+[[image]]
+file = "libIGUtils.dll"
+size = 327680
+sha256 = "afc8f8d15841ff19159ac58628a5b695851b8207528f95342b2b89f17c284442"
+image_base = 0x10000000
+symbols = "config/symbols/libigutils.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x11000, execute = true },
+  { name = ".rdata", start = 0x10012000, size = 0x38000, execute = false },
+  { name = ".data", start = 0x1004a000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x1004b000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1004c000, size = 0x4000, execute = false },
+]
+
+[[image]]
+file = "libIGViewer.dll"
+size = 393216
+sha256 = "0ccca68cca7aba83fd88d41d2985ad21605c06da322ca3410a703c4e2e629391"
+image_base = 0x10000000
+symbols = "config/symbols/libigviewer.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x1b000, execute = true },
+  { name = ".rdata", start = 0x1001c000, size = 0x3e000, execute = false },
+  { name = ".data", start = 0x1005a000, size = 0x1b98, execute = false },
+  { name = ".rsrc", start = 0x1005c000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1005d000, size = 0x4000, execute = false },
+]
+
+[[image]]
+file = "libMovie.dll"
+size = 61440
+sha256 = "3ef54b4d5862cedf9adaa542f017988b8e7bee0dae9c22ed4f9a19f1c002da4a"
+image_base = 0x10000000
+symbols = "config/symbols/libmovie.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x4000, execute = true },
+  { name = ".rdata", start = 0x10005000, size = 0x7000, execute = false },
+  { name = ".data", start = 0x1000c000, size = 0x1000, execute = false },
+  { name = ".rsrc", start = 0x1000d000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x1000e000, size = 0x1000, execute = false },
+]
+
+[[image]]
+file = "libCriMovie.dll"
+size = 380928
+sha256 = "9fe36fd67ca4c7b45a30098d84c562debdcccff69e06346a9f64b854b49fd302"
+image_base = 0x10000000
+symbols = "config/symbols/libcrimovie.txt"
+sections = [
+  { name = ".text", start = 0x10001000, size = 0x3c000, execute = true },
+  { name = "PSFD00", start = 0x1003d000, size = 0x2000, execute = true },
+  { name = "PSFD_I", start = 0x1003f000, size = 0x1000, execute = true },
+  { name = "PSFD_P", start = 0x10040000, size = 0x1000, execute = true },
+  { name = "PSFD_B", start = 0x10041000, size = 0x1000, execute = true },
+  { name = ".rdata", start = 0x10042000, size = 0xd000, execute = false },
+  { name = ".data", start = 0x1004f000, size = 0x1f1ed4, execute = false },
+  { name = ".rsrc", start = 0x10241000, size = 0x1000, execute = false },
+  { name = ".reloc", start = 0x10242000, size = 0x4000, execute = false },
+]

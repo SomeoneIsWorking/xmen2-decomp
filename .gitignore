@@ -1,0 +1,8 @@
+# The player's own install; never committed.
+/install/
+# Local tooling.
+/.venv/
+__pycache__/
+*.pyc
+/scratch/
+/build/

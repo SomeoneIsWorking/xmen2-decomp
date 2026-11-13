@@ -1,0 +1,21 @@
+// libIGGfx.dll: names the xmen2 port uses (its header constants and overrides).
+IgvkContext_IGDX8_GETCLASSMETA = 0x10009870; // type:func
+IgvkContext_IGDX8_REGINTERNAL = 0x10014A60; // type:func
+IgvkSlotsLifecycle_BASE_USER_INSTANTIATE = 0x100247F0; // type:func
+IgvkSlotsFrame_DX_SET_RD_SIZE = 0x1002AD40; // type:func
+IgvkSlotsLifecycle_DX_USER_INSTANTIATE = 0x1002C210; // type:func
+IgvkSlotsLifecycle_DX_USER_RELEASE = 0x1002C410; // type:func
+IgvkSlotsLifecycle_DX_SET_NATIVE_WINDOW_HANDLE = 0x1002C970; // type:func
+IgvkSlotsLifecycle_DX_SET_NATIVE_DEVICE_HANDLE = 0x1002C9D0; // type:func
+IgvkSlotsLifecycle_DX_OPEN_HELPER_B = 0x1002CA30; // type:func
+IgvkSlotsFrame_DX_SET_VIEWPORT = 0x1002EC70; // type:func
+IgvkSlotsLifecycle_DX_OPEN_HELPER_A = 0x1002FA60; // type:func
+IgvkContext_IGGFX_PURECALL = 0x100CE258; // type:label
+IgvkContext_IGGFX_STATUS_FAIL_PP = 0x100CF4D0;
+IgvkContext_IGGFX_STATUS_OK_PP = 0x100CF4D4;
+IgvkContext_IGDX8VISUALCONTEXT_VTABLE = 0x100DD0A0;
+IgvkContext_IGVISUALCONTEXT_META_SLOT = 0x10188BA0;
+IgvkContext_IGDXVISUALCONTEXT_META_SLOT = 0x10189048;
+IgvkContext_IGDX8VISUALCONTEXT_META_SLOT = 0x10189450;
+IgvkSlotsLifecycle_G_CURRENT_VISUAL_CONTEXT = 0x101895A8;
+IgvkSlotsFrame_G_FRAME_COUNT_LO = 0x101895B0;
