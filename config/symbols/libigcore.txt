@@ -1,3 +1,3 @@
 // libIGCore.dll: names the xmen2 port uses (its header constants and overrides).
-ThreadsEngineReport_IGCORE_THREADMGR_PTR = 0x1015F438;
-ThreadsEngineReport_IGCORE_PTHREAD_TLS_KEY = 0x1015F4D8;
+g_igThreadManager = 0x1015F438;
+g_pthreadSelfTlsKey = 0x1015F4D8;

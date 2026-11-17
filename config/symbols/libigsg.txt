@@ -1,9 +1,9 @@
 // libIGSg.dll: names the xmen2 port uses (its header constants and overrides).
-BoxCullOverride_DRIVER_EP = 0x10047470; // type:func
-BoxCullOverride_CORNERS_EP = 0x10047570; // type:func
-BoxCullOverride_CLASSIFY_EP = 0x100478E0; // type:func
-BoxCullOverride_DRIVER_PROJECTION_INDEX_SLOT_LINKED = 0x10070310;
-BoxCullOverride_DRIVER_VIEW_INDEX_SLOT_LINKED = 0x10070314;
-BoxCullOverride_CORNERS_ZERO_LINKED = 0x10077BA8;
-BoxCullOverride_GUARD_ONE_LINKED = 0x1007BB0C;
-BoxCullOverride_GUARD_SCALE_LINKED = 0x1014F4EC;
+FrustCull_TestBox = 0x10047470; // type:func
+FrustCull_BoxCorners = 0x10047570; // type:func
+FrustCull_ClassifyCorners = 0x100478E0; // type:func
+imp_ProjectionMatrixAttrIndex = 0x10070310;
+imp_ViewMatrixAttrIndex = 0x10070314;
+c_FloatZero = 0x10077BA8;
+c_FloatOne = 0x1007BB0C;
+g_GuardBandScale = 0x1014F4EC;

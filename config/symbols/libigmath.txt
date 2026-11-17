@@ -1,7 +1,9 @@
 // libIGMath.dll: names the xmen2 port uses (its header constants and overrides).
-IgMatrixOverride_MULTIPLY_EP = 0x10019520; // type:func
-IgMatrixInvertOverride_INVERT_EP = 0x1001B540; // type:func
-SkinOverride_BLEND_EP = 0x10022DF0; // type:func
-SkinOverride_RIGID_EP = 0x10022E80; // type:func
-IgMatrixInvertOverride_SUCCESS_SLOT_LINKED = 0x10029214;
-IgMatrixInvertOverride_FAILURE_SLOT_LINKED = 0x10029218;
+igMatrix44f_multiply = 0x10019520; // type:func
+igMatrix44f_invert = 0x1001B540; // type:func
+igMatrix44f_adjoint = 0x1001B5E0; // type:func
+igMatrix44f_determinant = 0x1001B980; // type:func
+Skin_BlendPositions = 0x10022DF0; // type:func
+Skin_RigidPositions = 0x10022E80; // type:func
+imp_igResultSuccess = 0x10029214;
+imp_igResultFailure = 0x10029218;
