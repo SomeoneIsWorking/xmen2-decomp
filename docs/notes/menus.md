@@ -668,7 +668,7 @@ switches on:
 | 1 | the roster | over `roster_summary01..03` and `roster_portrait01..03`, `WM_LBUTTONDOWN` publishes 0xb on the first entry, 0xc on the third, `MENU_OTHER` on the middle summary and `MENU_ACCEPT` on the middle portrait; the wheel publishes 0xb up and 0xc down |
 | 2 | stats | a click on `body`/`focus`/`strike`/`speed` (or its label) moves to that stat; on the current stat, left-button-down or wheel up adds a point (action 4), right-button-down or wheel down removes one (8). The move and the add come from one click (below) |
 | 3, 6 | skills | `skill_list` rows through the base `onMouse`; the icon strip left of the list assigns (0xd) |
-| 4 | gear | `equipment` and `equipment_inv` list boxes take the click through their own `+0x74` |
+| 4 | gear | `equipment` and `equipment_inv` list boxes take the click through their own `+0x74`; unless that was a button release, `onMouse` then refreshes the gear view (`FUN_005e0950`) for the menu's focused item (`FUN_005ab0c0`) |
 | 5 | ai | the seven `label_ai_*` rows: a click moves to a row, a click on the current row accepts it |
 
 In modes 2..6 a click on `detail_option01..04_text` (stats, skills, gear, ai)
@@ -715,8 +715,9 @@ description draws icons by token: `$DMG_<type>` a damage type, `$RES_<type>`
 a resistance, `$EP`, `$HP` and `$DR` the stat icons. The mouse holds it
 too: every `onMouse` message clears `menu+0x1d3c` and sets it again while
 the pointer is over `desctext4`, and the update publishes action 9 each
-frame the flag is set and `FUN_0061a600(player, 0)` holds: the player's left
-mouse button byte in the table at `0x00a68ca0` (0x28 bytes a player). A
+frame the flag is set and `FUN_0061a600(player, 0)` holds: the left mouse
+button byte of the menu's player (`[0x006f3920]`) in the table at
+`0x00a68ca0` (0x28 bytes a player). A
 posted action 9 each update holds the view the same way.
 
 Assigning a skill to a power slot (`FUN_005e5900`, the skills-mode update,

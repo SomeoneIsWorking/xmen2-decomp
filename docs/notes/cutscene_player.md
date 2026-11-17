@@ -123,7 +123,8 @@ speaker's name and a newline; the line is wrapped into the line box, then
 the response box (`FUN_004552f0`), the highlighted one prefixed `~8`. A record
 holds its id at `+0x88`, the ids it leads to at `+0x8c` (up to 8) and their
 count at `+0xac`; the current line's id is at `+0x4bc`. `FUN_004556b0(bool)`
-shows or hides the panel. Accept advances the line only once the game time
+shows or hides the panel, detaching its models; its shutdown (`FUN_00455d90`,
+vtable `+8`) releases them. Accept advances the line only once the game time
 (the game owner `FUN_0046dce0`, slot `+0x160`) passes the float at
 `+0x21b5c`; earlier presses are dropped. On touch
 `src/native/conversation_touch.cpp` keeps the composed strings, draws them
