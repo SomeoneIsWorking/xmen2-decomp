@@ -94,13 +94,17 @@ boundary is therefore control release, not an empty scheduler: 256 of 302
 shipping release scripts have commands after their final release and 86 yield
 again.
 
-The conversation manager's flags (`0x717aac`, `+0x21b24`: 0x1 speaking, 0x2
-visible, 0x8 ending, 0x10 enabled) read 0x10 once a level queues its opening
-conversation, 0x13 while it is shown, 0x18 while it ends and 0x08 after
-(jungle1 from the shipped autosave, 2026-10-07). While it is pending or shown
-a `killEntity` on a party hero does nothing and an XP grant's level-up popup
-waits; during 0x18 both work. `GET /party` reports the pending-or-shown state
-as `conversation`.
+The conversation manager's flags (`0x717aac`, `+0x21b24`): 0x1 speaking, 0x2
+shown, 0x8 ending, 0x10 loaded. The manager's load (vtable `+0x4`,
+`FUN_00455af0`) sets 0x10 as its last step once the panel art and text boxes
+are loaded, and its unload (`+0x8`, `FUN_00455d90`) clears it; the per-frame
+update (`FUN_0045d1a0`) returns at once without it. 0x10 is therefore set on
+every map, conversation or not, and says nothing about one being queued. The
+show/hide (`FUN_004556b0`) sets 0x2, the end of a line with no next one
+(`FUN_0045cde0`) sets 0x8 and hides. A shown conversation reads 0x13 or 0x17
+and an ending one 0x18 or 0x1c. While one is shown a `killEntity` on a party
+hero does nothing and an XP grant's level-up popup waits (jungle1, 2026-10-07);
+`GET /party` reports the shown state as `conversation`.
 
 The conversation draws its own panel (`FUN_00455af0` loads
 `ui/hud/convo_background` and two text boxes: the line at `+0x21b38`, the
